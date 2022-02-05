@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "finance.hpp"
+#include "games.hpp"
 
 void menu();
 

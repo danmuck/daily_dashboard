@@ -7,15 +7,15 @@ void menu()
     do
     {
         std::cout << "0. Quit" << std::endl
-                  << "1. [coming soon]" << std::endl
-                  << "2. [coming soon]" << std::endl
-                  << "3. [coming soon]" << std::endl
-                  << "4. [coming soon]" << std::endl
-                  << "5. [coming soon]" << std::endl
-                  << "6. [coming soon]" << std::endl
-                  << "7. [coming soon]" << std::endl
-                  << "8. [coming soon]" << std::endl
-                  << "9. Calculate Monthly Interest Gains" << std::endl;
+                  << "1. []" << std::endl
+                  << "2. []" << std::endl
+                  << "3. []" << std::endl
+                  << "4. []" << std::endl
+                  << "5. [Finance]" << std::endl
+                  << "6. []" << std::endl
+                  << "7. []" << std::endl
+                  << "8. [Games]" << std::endl
+                  << "9. [interest] -- moving" << std::endl;
 
         std::cin >> choice;
 
@@ -23,33 +23,40 @@ void menu()
         {
         case 0:
             std::cout << "bye bye" << std::endl;
-            return;
+            break;
         case 1:
-            std::cout << "[coming soon]" << std::endl;
+            std::cout << "[]" << std::endl;
+            break;
         case 2:
-            std::cout << "[coming soon]" << std::endl;
-            return;
+            std::cout << "[]" << std::endl;
+            break;
         case 3:
-            std::cout << "[coming soon]" << std::endl;
-            return;
+            std::cout << "[]" << std::endl;
+            break;
         case 4:
-            std::cout << "[coming soon]" << std::endl;
-            return;
+            std::cout << "[]" << std::endl;
+            break;
         case 5:
-            std::cout << "[coming soon]" << std::endl;
-            return;
+            std::cout << "[finance]" << std::endl;
+            finance_menu();
+            break;
         case 6:
-            std::cout << "[coming soon]" << std::endl;
-            return;
+            std::cout << "[]" << std::endl;
+            break;
         case 7:
-            std::cout << "[coming soon]" << std::endl;
-            return;
+            std::cout << "[]" << std::endl;
+            break;
         case 8:
-            std::cout << "[coming soon]" << std::endl;
-            return;
+            std::cout << "[games]" << std::endl;
+            games_menu();
+            break;
         case 9:
-            std::cout << "== Calculate compound interest paid monthly ==" << std::endl;
+            std::cout << "[compound interest] -- moving" << std::endl;
             calculate_monthly_gains();
+            break;
+        default:
+            std::cout << "Invalid Entry" << std::endl;
+            break;
         }
 
     } while (choice != 0);
