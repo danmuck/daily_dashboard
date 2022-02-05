@@ -1,0 +1,1 @@
+Hello, I am working on a small daily dashboard to help me learn C++ :)
