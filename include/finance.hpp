@@ -1,5 +1,5 @@
-#ifndef FINANCE
-#define FINANCE
+#ifndef FINANCE_HPP
+#define FINANCE_HPP
 
 #include <iostream>
 #include <iomanip>
@@ -7,4 +7,4 @@
 
 double calculate_monthly_gains();
 
-#endif // FINANCE
+#endif // FINANCE_HPP

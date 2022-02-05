@@ -1,9 +1,9 @@
-#ifndef MAIN
-#define MAIN
+#ifndef MAIN_HPP
+#define MAIN_HPP
 
 #include <iostream>
 #include "finance.hpp"
 
 void menu();
 
-#endif // MAIN
+#endif // MAIN_HPP
