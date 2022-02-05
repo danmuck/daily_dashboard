@@ -3,7 +3,7 @@ VPATH = src:lib:include
 DIRS = src lib include 
 $(shell mkdir -p $(DIRS))
 
-daily_check_in: main.o finance.o
+daily_dashboard: main.o finance.o
 	g++ lib/main.o lib/finance.o -o run_me
 
 main.o: main.cpp
