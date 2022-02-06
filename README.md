@@ -1,1 +1,5 @@
-Hello, I am working on a small daily dashboard to help me learn C++ :)
+# Daily Dashboard
+
+## danmuck
+
+Small terminal based daily check-in app
