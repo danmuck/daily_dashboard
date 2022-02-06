@@ -6,8 +6,8 @@
 #include <limits>
 
 void print_array(int array[], int size);
-void print_vector(std::vector<int> vec);
-void make_array();
+void print_vector_i(std::vector<int> vec);
+void make_array_i();
 void make_vector();
 void learning_tools_menu();
 

@@ -2,7 +2,7 @@
 
 // when passed to a function the array is degraded to an int pointer
 // to avoid this you must pass both the array and its size, and declare it like in [int main()] --
-void print_array(int array[], int size)
+void print_array_i(int array[], int size)
 {
     std::cout << "\n\tyour_array = \n\t  { ";
     for (int i = 0; i < size; i++)
@@ -16,9 +16,10 @@ void print_array(int array[], int size)
             std::cout << array[i] << ", ";
         }
     }
-    std::cout << " } \n";
+    std::cout << " } \n\n";
 }
-void print_vector(std::vector<int> vec)
+
+void print_vector_i(std::vector<int> vec)
 {
     int i, j;
     j = vec.size();
@@ -35,7 +36,7 @@ void print_vector(std::vector<int> vec)
             std::cout << vec[i] << ", ";
         }
     }
-    std::cout << " } \n";
+    std::cout << " } \n\n";
 }
 
 void make_array()
@@ -61,7 +62,7 @@ void make_array()
             break;
         }
     }
-    print_array(guesses, count);
+    print_array_i(guesses, count);
     std::cin.clear();
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 }
@@ -77,22 +78,31 @@ void make_vector()
     // vector declared
     std::vector<int> items = {12, 13, 69, 420, 12, 34, 56};
 
+    // print vector items
+    print_vector_i(items);
+
+    // get length of the vector
+    std::cout << items.size() << " = vector length \n";
+
     // add the integer 199 to the vector
+    std::cout << "Added 199 to vector-- \n";
     items.push_back(199);
 
     // get the value at index 2 (199)
-    std::cout << items[2] << " index 2 \n";
+    std::cout << items[2] << " = vector index 2 \n";
 
     // get length of the vector
-    std::cout << items.size() << " length \n";
+    std::cout << items.size() << " = new length \n";
+    print_vector_i(items);
 
     // get the last item in the vector
-    std::cout << items[items.size() - 1] << " last item \n";
+    std::cout << items[items.size() - 1] << " = last item \n";
 
     // remove last item in the vector
+    std::cout << "Remove last item from vector-- \n";
     items.pop_back();
 
-    std::cout << items.size() << " new length \n";
+    std::cout << items.size() << " = new length \n";
 
     // int i, j;
     // j = items.size();
@@ -101,7 +111,7 @@ void make_vector()
     //     std::cout << items[i] << std::endl;
     // }
 
-    print_vector(items);
+    print_vector_i(items);
 }
 
 void learning_tools_menu()
