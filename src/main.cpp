@@ -136,7 +136,7 @@ void menu()
                   << "6. [Users]x" << std::endl
                   << "7. [Learning Tools]" << std::endl
                   << "8. [Games]" << std::endl
-                  << "9. [interest] -- moving" << std::endl;
+                  << "9. [Other] -- interest moving" << std::endl;
 
         std::cin >> choice;
 
