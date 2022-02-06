@@ -4,6 +4,7 @@
 #include <iostream>
 #include "finance.hpp"
 #include "games.hpp"
+#include "learning_tools.hpp"
 
 void menu();
 

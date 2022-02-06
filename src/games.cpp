@@ -29,12 +29,8 @@ void guess_numbers()
 
 void games_menu()
 {
-    /**
-     * @brief For a [Menu] it is best to use a [do while] loop.
-     *
-     */
 
-    srand(time(NULL));
+    // srand(time(NULL));
     int choice;
 
     do

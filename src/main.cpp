@@ -13,7 +13,7 @@ void menu()
                   << "4. []" << std::endl
                   << "5. [Finance]" << std::endl
                   << "6. []" << std::endl
-                  << "7. []" << std::endl
+                  << "7. [Learning Tools]" << std::endl
                   << "8. [Games]" << std::endl
                   << "9. [interest] -- moving" << std::endl;
 
@@ -44,7 +44,8 @@ void menu()
             std::cout << "[]" << std::endl;
             break;
         case 7:
-            std::cout << "[]" << std::endl;
+            std::cout << "[Learning Tools]" << std::endl;
+            learning_tools_menu();
             break;
         case 8:
             std::cout << "[games]" << std::endl;
