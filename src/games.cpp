@@ -20,7 +20,7 @@ void games_print_array(int array[], int count)
     ;
 }
 
-void guess_numbers()
+void guess_numbers(void)
 {
     int height = 251;
     int guesses_ = (height / 15) + 2;
@@ -29,7 +29,7 @@ void guess_numbers()
 
     srand(time(NULL));
     int random = rand() % height;
-    // tells the answer
+    // tells the answer for testing purposes
     std::cout << "Random number for you: " << random << std::endl;
 
     std::cout << "Guess a number between 0 and " << height << ": ";
@@ -58,7 +58,7 @@ void guess_numbers()
     games_print_array(guesses, guess_count);
 }
 
-void games_menu()
+void games_menu(void)
 {
 
     int choice;

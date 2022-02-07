@@ -39,13 +39,13 @@ void print_vector_i(std::vector<int> vec)
     std::cout << " } \n\n";
 }
 
-void make_array()
+void make_array(void)
 {
     const int SIZE = 100;
     int guesses[SIZE];
 
+    std::cout << "Enter integers to add to the array. (enter a non integer to break the loop) \n: ";
     int count = 0;
-
     for (int i = 0; i < SIZE; i++)
     {
         if (std::cin >> guesses[i])

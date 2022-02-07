@@ -1,134 +1,12 @@
 #include "../include/main.hpp"
 
-// class Menu
-// {
-// public:
-//     char exit_char;
-//     int height;
-//     std::string topics[];
-//     Menu(char exit_char, int height, std::string topics[]);
-
-//     void new_menu()
-//     {
-//         // this->exit_char = exit_char;
-//         // this->height = height;
-//         // this->topics[height] = topics[height];
-//         // exit_char = this->exit_char;
-//         // height = this->height;
-//         // topics[height] = this->topics[height];
-//         int i;
-//         for (i = 0; i < height; i++)
-//         {
-//             std::cout << i << ". [" << topics[i] << "]" << std::endl;
-//         }
-//         std::cout << exit_char << ". to quit" << std::endl;
-
-//         int choice;
-//         do
-//         {
-
-//             std::cin >> choice;
-
-//             switch (choice)
-//             {
-//             case 0:
-//                 if (topics[i] != "")
-//                 {
-//                     std::cout << "[ " << topics[i] << " ] \n";
-//                     std::string j = topics[i] + "_menu";
-//                     void j();
-//                 }
-//                 break;
-//             case 1:
-//                 if (topics[i] != "")
-//                 {
-//                     std::cout << "[ " << topics[i] << " ] \n";
-//                     std::string j = topics[i];
-//                     void j();
-//                 }
-//                 break;
-//             case 2:
-//                 if (topics[i] != "")
-//                 {
-//                     std::cout << "[ " << topics[i] << " ] \n";
-//                     std::string j = topics[i];
-//                     void j();
-//                 }
-//                 break;
-//             case 3:
-//                 if (topics[i] != "")
-//                 {
-//                     std::cout << "[ " << topics[i] << " ] \n";
-//                     std::string j = topics[i];
-//                     void j();
-//                 }
-//                 break;
-//             case 4:
-//                 if (topics[i] != "")
-//                 {
-//                     std::cout << "[ " << topics[i] << " ] \n";
-//                     std::string j = topics[i];
-//                     void j();
-//                 }
-//                 break;
-//             case 5:
-//                 if (topics[i] != "")
-//                 {
-//                     std::cout << "[ " << topics[i] << " ] \n";
-//                     std::string j = topics[i];
-//                     void j();
-//                 }
-//                 break;
-//             case 6:
-//                 if (topics[i] != "")
-//                 {
-//                     std::cout << "[ " << topics[i] << " ] \n";
-//                     std::string j = topics[i];
-//                     void j();
-//                 }
-//                 break;
-//             case 7:
-//                 if (topics[i] != "")
-//                 {
-//                     std::cout << "[ " << topics[i] << " ] \n";
-//                     std::string j = topics[i];
-//                     void j();
-//                 }
-//                 break;
-//             case 8:
-//                 if (topics[i] != "")
-//                 {
-//                     std::cout << "[ " << topics[i] << " ] \n";
-//                     std::string j = topics[i];
-//                     void j();
-//                 }
-//                 break;
-//             case 9:
-//                 if (topics[i] != "")
-//                 {
-//                     std::cout << "[ " << topics[i] << " ] \n";
-//                     std::string j = topics[i];
-//                     void j();
-//                 }
-//                 break;
-//             default:
-//                 std::cout << "Invalid choice" << std::endl;
-//                 // finance_menu();
-//                 break;
-//             }
-
-//         } while (choice != 0 && choice != exit_char);
-//     }
-// };
-
-void menu()
+void menu(void)
 {
     int choice;
 
     do
     {
-        std::cout << "0. Quit" << std::endl
-                  << "1. [Tasks]x" << std::endl
+        std::cout << "1. [Tasks]x" << std::endl
                   << "2. [Personal]x" << std::endl
                   << "3. [Tools]" << std::endl
                   << "4. [Projects]x" << std::endl
@@ -136,7 +14,8 @@ void menu()
                   << "6. [Users]x" << std::endl
                   << "7. [Learning Tools]" << std::endl
                   << "8. [Games]" << std::endl
-                  << "9. [Other] -- interest moving" << std::endl;
+                  << "9. [Other] -- interest moving" << std::endl
+                  << "0. Quit" << std::endl;
 
         std::cin >> choice;
 
@@ -188,8 +67,4 @@ void menu()
 int main()
 {
     menu();
-    // std::string topic[1] = {
-    //     "finance_menu"};
-    // Menu menus('q', 1, topic);
-    // menus.new_menu();
 }

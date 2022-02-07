@@ -1,5 +1,26 @@
 #include "../include/tools.hpp"
 
+void int_calculator()
+{
+    int num_stack;
+    int nums[num_stack];
+    char add_ = '+';
+    char sub_ = '-';
+    char mul_ = '*';
+    char div_ = '/';
+    char rem_ = '%';
+
+    std::cout << "Push some symbols onto the stack and retreive some answers in integer form.\n";
+    std::cout << "How many numbers will you need in your function?";
+    std::cin >> num_stack;
+
+    for (int i = 0; i < num_stack; i++)
+    {
+        std::cout << "num_" << i << ": " << std::endl;
+        std::cin >> nums[num_stack];
+    }
+}
+// 256 % 128 % 64 % 32 % 16 % 8 % 4 % 2 % 1
 void tools_menu()
 {
     int choice;
@@ -25,7 +46,7 @@ void tools_menu()
             std::cout << "bye bye" << std::endl;
             break;
         case 1:
-            std::cout << "[]" << std::endl;
+            std::cout << "[Integer Calculator]" << std::endl;
             break;
         case 2:
             std::cout << "[]" << std::endl;
