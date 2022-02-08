@@ -54,6 +54,14 @@ double calculate_monthly_gains()
     return new_cash_total;
 }
 
+void investment_log()
+{
+    /**
+     *      date    USD     COIN    FEE     PRICE
+     *
+     */
+}
+
 void finance_menu()
 {
     int choice;
